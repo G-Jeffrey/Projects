@@ -1,0 +1,52 @@
+body{
+    height: 1000px;
+    background-image: linear-gradient(to bottom right, red, white, blue);
+    /* opacity: 40%; */
+    background-repeat: no-repeat;
+}
+div.header{
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    border: 2px grey groove;
+    box-shadow: 2px 2px 2px grey;
+    text-shadow: 4px 4px 4px darkgray;
+}
+.statue{
+    background-color: rgb(78,114,162);
+    background-image: url(../images/statue.JPG);
+    opacity: 60%;
+    background-repeat: no-repeat;
+}
+.container{
+  padding-left: 5%;
+  padding-right: 5%; 
+  display: flex;
+}
+.third{
+    width:400px;
+    height:300px;
+}
+p.images{
+    padding: 30px;
+    border: 4px white dotted;
+    margin: 5%;
+    border-radius: 25px;
+}
+.text{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+input[type=submit]{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+}
+input[type=submit]:hover{
+    background-color: skyblue;
+}
