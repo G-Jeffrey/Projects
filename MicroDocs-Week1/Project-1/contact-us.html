@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script>
+        let map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 65.1189919, lng: -17.9634349 },
+                zoom: 6.5,
+            });
+        }
+    </script>
+    <style>
+    html,body {
+        height: 40%;
+    }
+    #map {
+        border: 2px black dotted;
+        width: 75%;
+        padding: 200px;
+    }
+    </style>
+</head>
+<body style="background-color: rgba(255, 166, 0.1);"> 
+    <p class="title">Contact Us</p>
+    <div class="question"></div>
+    <form><div class = "info-bg">
+        <span class="glyphicon glyphicon-user"></span> Name: <input type="text" name="name" placeholder="John Doe" required><br>
+        <span class="glyphicon glyphicon-envelope"></span> Email: <input type="email" name="email" placeholder="johndoe@gmail.com" required><br>
+        <span class="glyphicon glyphicon-phone"></span> Phone Number: <input type="tel" name = "number" placeholder="#-###-###-####" required><br>
+        <span class="glyphicon glyphicon-pencil"></span> Message: <br><textarea name="message" rows="4" name="message" placeholder="Leave your message here!" required></textarea><br>
+        
+        <input type="submit"></div>
+    
+    </form>
+    
+    <center><div id="map"></div></div> </center>
+    <hr>
+    <footer>
+        <a href = "index.html" alt = "Homepage">Home</a> |
+        <a href = "northernLight.html" alt = "Northern Lights">The Northern Lights</a> |
+        <a href = "hiking.html" alt = "Hiking on the Glaciers">Hiking on the Glaciers</a> |
+        <a href = "" alt = "Homepage" title="You are already on this page" class = "active">Contact Us</a></div>
+        <br>
+        <b>2021 @ Project 1 by Jeffrey Guan</b>
+    </footer>
+</body>
+</html>

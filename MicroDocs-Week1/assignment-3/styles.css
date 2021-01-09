@@ -2,7 +2,8 @@ body{
     width:200%;
     height: 100%;
     background-image: linear-gradient(to bottom right, red, white, blue);
-    background-repeat: no-repeatg;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 div.header{
 /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */

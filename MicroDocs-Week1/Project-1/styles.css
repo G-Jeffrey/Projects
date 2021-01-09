@@ -1,0 +1,101 @@
+.title{
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+.pink{
+    background-color: pink;
+    border: 2px black solid;
+    color:white;
+    padding: 10px;
+    font-size: 25px; 
+}
+.container{
+    padding: 40px;
+    display:flex;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+}
+.img-border{
+    border: 2px purple solid;
+    margin-left: 3%;
+    margin-right: 3%;
+    align: left;
+}
+footer{
+    text-align: center;
+}
+div.images{
+    display:flex;
+    margin-left: 5%;
+}
+.third{
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 2px black solid;
+    width: 30%;
+    height: 300px;
+}
+.textBox{
+    background-color: gray;
+    text-align: center;
+}
+.third:hover{
+    border: 5px blue solid;
+}
+.pushDown{
+    padding-top: 9%;
+    font-size: 15px;
+}
+.logo{
+    width:15%;
+    margin-bottom: 10px;
+}
+table{
+    border: 3px black solid;
+}
+th{
+    font-weight: bold;
+    background-color: lightgreen;
+}
+.contact-logo{
+    width:50px;
+    height: 50px;
+    padding-left: 35px;
+    padding-top: 25px;   
+}
+h2.contact{
+    margin:-5px;
+}
+#contact{
+    position: relative;
+    bottom: 15px;
+    left: 5px;
+}
+a.active{
+    color: red;
+    pointer-events: none;
+}
+.question{
+    background-image: url(../images/question.jpg);
+    background-repeat: repeat;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+.info-bg{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    margin:3%;
+    margin-left:40%;
+    padding:3%;
+    background-color: skyblue;
+}
