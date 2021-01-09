@@ -1,0 +1,46 @@
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    padding: 3px;
+    border:greenyellow 2px dotted;
+    display: inline;
+}
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+}
+.first{
+    text-shadow: 2px 2px 1px darkgray;
+}
+.second{
+    background-color: grey;
+    backdrop-filter: blur(3px);
+}
+.third{
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    font-weight: 20px;
+}
+.seventh{
+    font-family: cursive;
+    background-image: url(../images/Capture.JPG);
+    opacity: 0.7;
+}
+.imgContainer{
+    position: relative;
+}
+.starry{
+    width: 50%;
+    height: auto;
+    border-right: 19px red solid;
+    opacity: 47%;
+}
+.inside{
+    position: absolute;
+    
+    left: 20%;
+    top: 50%;
+    font-size: 18px;
+}
