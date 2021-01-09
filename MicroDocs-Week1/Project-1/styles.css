@@ -95,7 +95,8 @@ a.active{
     flex-direction: column;
     font-family: 'Times New Roman', Times, serif;
     margin:3%;
-    margin-left:40%;
+    margin-left:10%;
+    margin-right:10%;
     padding:3%;
     background-color: skyblue;
 }
