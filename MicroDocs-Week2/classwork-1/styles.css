@@ -1,0 +1,73 @@
+.container{
+    
+    width: 50%;
+    height: 670px;
+    border: 2px black solid;
+    background-image: url(../img/edges.jpg);
+    animation-name: rotate;
+    animation-delay: 9s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-top: 0px;
+    margin-left:0px; 
+}
+img.car{
+    position: absolute;
+    width: 29px;
+    height: 27px;
+    animation-name: drive;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-top: 96px;
+    margin-left:20px; 
+}
+/* @keyframes driveway{
+    0%{
+        margin-top: 96px;
+        margin-left:20px;
+    }
+    100%{
+        margin-top: 96px;
+        margin-left:75px;
+    }
+} */
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    15%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes drive{
+    0%{
+        margin-top: 96px;
+        margin-left:75px;
+    }
+    20%{
+        margin-top: 96px;
+        margin-left:693px;
+    }
+    40%{
+        margin-top: 586px;
+        margin-left:693px;
+    }
+    60%{
+        margin-top: 586px;
+        margin-left: 75px;
+    }
+    80%{
+       margin-top: 96px;
+       margin-left: 75px;
+    }
+    100%{
+        margin-top: 96px;
+        margin-left: 75px;
+    }
+}

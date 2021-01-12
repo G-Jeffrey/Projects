@@ -1,0 +1,50 @@
+body{
+    background-color:  #C8A2C8;
+}
+div.container{
+    border: 2px black solid;
+    position: relative;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* background-color: skyblue; */
+    
+    background-image: url("../img/clock.png");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height:1200px;
+}
+img.minute{
+    position: absolute;
+    width:40%;
+    height:20%;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top:40%;
+    margin-left: 50%;
+    transform-origin: 0% 50%;
+}
+img.hour{
+    position: absolute;
+    width:30%;
+    height:20%;
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    margin-top:40%;
+    margin-left: 50%;
+    transform-origin: 0% 50%;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg); 
+    }
+}
