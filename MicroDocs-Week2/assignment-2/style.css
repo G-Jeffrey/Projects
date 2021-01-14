@@ -1,0 +1,31 @@
+div.container{
+}
+div.img-container{
+    border: 2px red solid;
+    margin: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 41%;
+    height: 700px;
+    float:left;
+    
+}
+.click{
+    background-color: orange;
+    color: white;
+    margin-left: 20%;
+    padding: 10px;
+    padding-left: 11%;
+    padding-right: 11%;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 40px;
+}
+.snack{
+    position: relative;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top: 7%;
+    height: 60%;
+    width: 60%;
+}
