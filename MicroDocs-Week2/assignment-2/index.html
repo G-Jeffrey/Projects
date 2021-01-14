@@ -7,14 +7,43 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="img-container">
-            <img src="img/snack.jpg" class = "snack">
-        </div>
-        <div class="img-container">
-            <img src="img/snack2.jpg" class = "snack">
-            <h1><a href = "" class = "click" >Close Right</a></h1>
+    <div class="center1" id = "modal1">
+        <div class="content orange">
+            <div class = "header">Modal Windal Example</div>
+            <div class = "tab">
+                <div class="text">This is a paragraph in the messager window. This is a paragraph in the messager window. This is a paragraph in the messager window.</div>
+                <div class="app tab"></div>
+                <a href="#container" class = "popButton">Close</a>
+            </div>
         </div>
     </div>
+    <div class="center1 tar" id = "modal2">
+        <div class="content skyblue">
+            <div class = "header">Modal Windal Example II
+                <button class = "close"><a href = "#">X</a></button>
+            </div>
+            <div class = "tab">
+                <div class="text">This is a paragraph in the messager window. This is a paragraph in the messager window. This is a paragraph in the messager window.</div>
+                <div class="app tab"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id = "container">
+        <div class="img-container">
+            <div class = "snack">
+                <img src="img/snack.jpg" class = "image">
+                Description of the first product
+                <a href = "#modal1" class = "click" >Open modal Link</a>
+            </div>
+        </div>
+        <div class="img-container">
+            <div class = "snack">
+                <img src="img/snack2.jpg" class = "image">
+                Description of the second product
+                <a href = "#modal2" class = "click" >Open modal Link II</a>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
