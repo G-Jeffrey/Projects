@@ -1,0 +1,35 @@
+.click{
+    background-color: orange;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.click:hover{
+    background-color: blue;
+}
+.modalwindow{
+    position: fixed;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(30, 60, 100, 0,5);
+    opacity: 0;
+    pointer-events: none;
+}
+.modalwindow:target{
+    opacity:1;
+    pointer-events:all;
+}
+.msgblock{
+    width: 30%;
+}
+/* @keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */

@@ -1,0 +1,56 @@
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin:20px;
+    border: 2px gray solid;
+    background-color: silver;
+    padding:10px;
+    height:400px;
+}
+.left{
+    opacity:1;
+    pointer-events: all;
+    background-color: black;
+    color: white;
+    height:100%;
+    width:50%;
+}
+.right{
+    opacity:1;
+    pointer-events: all;
+    background-color: white;
+    color: black;
+    height:100%;
+    width:50%;
+}
+.left:target{
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+}
+.right:target{
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+}
+.recover:target{
+    pointer-events: all;
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+}
+.recover{
+    pointer-events: all;
+    opacity: 1;
+    transition: opacity 0.35s ease-in-out;
+}
+/* .visible {
+    opacity: 1;
+} */
+.click{
+    background-color: orange;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+}
