@@ -1,0 +1,381 @@
+div.bag{
+    pointer-events: none;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    width: 70vh;
+    height:47vh;
+    padding: 4%;
+    padding-left:2%;
+    background-color: rgba(0, 0, 0, .7);
+    padding-left: 18%;
+    font-size: 3vh;
+    padding-right: 100%;
+    padding-top: 20%;
+    padding-bottom: 250%;
+    margin-top:-15vh;
+    margin-left:-5vh;
+    overflow: hidden;
+}
+div.bag:target{
+    pointer-events: all;
+    opacity:1;
+    z-index: 1;
+}
+div.whitebg{
+    margin-left:6vh;
+    width:100%;
+    padding-left:4%;
+    padding-top:8%;
+    padding-right:6.3%;
+    /* padding-left: 1vh; */
+    padding-bottom: 3vh;
+    background-color: white;
+}
+.close-btn{
+    position: relative;
+    float:right;
+    color:black;
+    background-color: gray;
+    font-size: 2vh;
+    padding: 1%;
+    margin-top: -8%;
+    margin-right: -6.3%;
+}
+div.cartDesc{
+    padding-bottom:2vh;
+    margin-left:-2.8vh;
+    padding-left:3vh;
+    padding-right:4.35vh;
+    padding-top:2vh;
+    font-size: 2vh;
+    width:100%;
+    background-color: lightgray;
+}
+.pad{
+    padding:1%;
+    padding-bottom: 4%;
+}
+a.contiune{
+    padding: 1vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    background-color: white;
+    color:black;
+}
+div.itemCart{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.itemDesc{
+    font-size: 2vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: lightyellow;
+}
+div.header{
+    position: sticky;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+    height:150px;
+    
+}
+img.logo{
+    width:100%;
+    height:100%;
+    animation: flip 12s linear 1s infinite;
+}
+div.border{
+    position: absolute;
+    display: inline;
+    left:5%;
+    height:80%;
+    width:10%;
+    border: 3px darkolivegreen solid;
+    border-radius: 15px;
+}
+@keyframes flip{
+    0%{
+        transform:rotate3d(1, 1, 0, 0deg);
+    }
+    50%{
+        transform:rotate3d(1, 1, 0, 360deg);
+    }
+    100%{
+        transform:rotate3d(1, 1, 0,0deg);
+    }
+}
+div.animationText{
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+div.hText{
+    font-size: 70px;
+    margin-top: 10px;
+    color: darkolivegreen;
+    font-family: 'Great Vibes', cursive;
+    animation: fadeLeft 6s linear 1s infinite;
+    
+}
+div.hDesc{
+    font-weight: bold;
+    animation: fadeLeft 6s linear 1s infinite;
+}
+@keyframes fadeScale{
+    0%{
+        transform: scale(1,1);
+        opacity:1;
+    }
+    80%{
+        transform: scale(0,0);
+        opacity:0;
+    }
+    81%{
+        margin-left: 20px;
+        opacity: 0;
+        transform: scale(1,1);
+    }
+    85%{
+        margin-left: 0px;
+        opacity:1;
+    }
+    100%{
+        margin-left: 0px;
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+@keyframes fadeLeft{
+    0%{
+        opacity: 1;
+        margin-left: 0px;
+    }
+    80%{
+        opacity: 0;
+        margin-left: 160px;
+    }
+    81%{
+        opacity: 0;
+        margin-left: 20px;
+    }
+    85%{
+        opacity: 1;
+        margin-left: 0px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0px;
+    }   
+}
+div.body{
+    z-index: 0;
+    position: relative;
+    margin:3%;
+}
+div.slideGroup{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color:white;
+    background-color: plum;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+div.slider{
+    width:900%;
+    animation: scroll 12s linear infinite;
+}
+.bonus{
+    padding-left: 2px;
+    font-style: italic;
+}
+.lBold{
+    font-style: bold;
+    font-size: 20px;
+}
+span.sliderItem{
+    overflow: hidden;
+    padding-left: 4%;
+    padding-right:2%;
+    margin: 0;
+    max-width: 33%;
+}
+
+@keyframes scroll {
+    0%   { margin-left: 0%; }
+    25%   { margin-left: 0%; }
+    35%  { margin-left: -100% }
+    60%   { margin-left: -100%; }
+    65%  { margin-left: -184%; }
+    85%  {
+        margin-left: -184%;
+        opacity:1;
+    } 
+    90% { opacity:0}
+    91% { margin-left: 0%;}
+    100%{
+        opacity:1;
+    }
+}
+div.flowbg{
+    position: relative;
+    width: 100%;
+    height:40%;
+}
+div.abs{
+    position: absolute;
+}
+div.imgMsgBlock{
+    color:white;
+    padding: 20px;
+    border: 4px white solid;
+    background-color: grey;
+    width:35%;
+    font-size: 13px;
+    margin:5px;
+    left:10%;
+    top:10%;
+}
+div.subText{
+    left:1%;
+    top:20%;
+    border: 1px lightgreen solid;
+    padding:2%;
+    margin-right:2%;
+    color: white;
+}
+div.flow{
+    overflow: hidden;
+    position: relative;
+    background-image: url("img/flower.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 75vh;
+}
+div.flow2{
+    overflow: hidden;
+    position: relative;
+    background-image: url("img/intro_img1.jpg");
+    opacity: 0.5;
+    background-image: url("img/intro_img1.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 40vh;
+}
+div.container{
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    margin-top:3%;
+    margin-left:3%;
+    margin-right:3%;
+    width: 100%;
+}
+div.grad{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(49, 133, 49);
+    background-image: linear-gradient(to top right, rgb(250, 199, 243), #c7f5da);
+    width: 47%;
+    height: 40vh;
+    margin-left:5%;
+    padding-left:3%
+}
+div.rightPadding{
+    padding-right:10%;
+}
+div.flex-container{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+.green{
+    color: rgb(49, 133, 49);
+}
+div.item{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.btn{
+    padding:3%;
+    background-color: black;
+}
+.absBut{
+    position: absolute;
+
+    background-color: white;
+    color:black;
+    
+    pointer-events: none;
+    padding:2%;
+}
+#show{
+    z-index: -1;
+    opacity: 0;
+}
+#show{
+    width:100%;
+}
+#show:hover{
+    /* background-color: red; */
+    opacity: 0.5;
+}
+/* #four:hover{
+    
+} */
+div.spacing{
+    margin-bottom: 5%;
+}
+.footer{
+    position: absolute;
+    padding-left: 5px;
+    padding-right:5px;
+    width:100%;
+    background-color: rgb(44, 43, 43);
+    color:white;
+    padding-bottom: 20px;  
+}
+div.contact{
+    padding-top:5%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+div.contactItem{
+    display:flex;
+    flex-direction: column;
+    font-size:12px;
+    text-align: center;
+}
+.contactHeader{
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom:5%;
+}
+div.contactLogo{
+    padding-right:4%;
+    padding-left:auto;
+    padding-bottom:20%;
+    text-align: right;
+}
+.social{
+    width:5%;
+    height:5%;
+}
+.connect{
+    padding:4%;
+    padding-bottom: 1%;
+    text-align: right;
+}
